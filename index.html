@@ -1,1 +1,131 @@
-Jai Sri Ram
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HelloSri LLC – AI Automation & Technology Consulting</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Calendly embed stylesheet -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header class="site-header">
+    <div class="container">
+      <a href="#" class="logo">HelloSri LLC</a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <nav id="site-nav" class="site-nav">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h1>AI Automation & Technology Consulting</h1>
+        <p>Empowering businesses with cutting-edge AI solutions, IT strategy, and project delivery for measurable ROI.</p>
+        <a href="#contact" class="btn btn-primary">Get Started</a>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+          <div class="service-card">
+            <img src="images/ai.jpeg" alt="AI Automation" />
+            <h3>AI Automation</h3>
+            <p>Streamline workflows and reduce manual effort with custom intelligent automation solutions.</p>
+          </div>
+          <div class="service-card">
+            <img src="images/cloud.jpeg" alt="Technology Consulting" />
+            <h3>Cloud Technology Consulting</h3>
+            <p>Strategic guidance on cloud architecture, cybersecurity, and digital transformation.</p>
+          </div>
+          <div class="service-card">
+            <img src="images/project_delivery.jpeg" alt="Project Delivery" />
+            <h3>Project Delivery</h3>
+            <p>End-to-end IT project management to ensure on-time, on-budget delivery.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About HelloSri LLC</h2>
+        <p>Founded on deep technical expertise and a passion for innovation, we help organizations across industries harness AI and modern IT practices to unlock new efficiencies, reduce costs, and drive growth.</p>
+      </div>
+    </section>
+
+    <!-- Contact & Scheduling Section -->
+    <section id="contact" class="contact">
+      <div class="container contact-grid">
+        <!-- Contact Form -->
+        <div class="contact-form section-hidden">
+          <h2>Contact Us</h2>
+          <form action="https://formspree.io/f/myzwkyob" method="POST" target="_blank">
+            <label>Name<input type="text" name="name" required /></label>
+            <label>Email<input type="email" name="_replyto" required /></label>
+            <label>Message<textarea name="message" rows="4" required></textarea></label>
+            <button type="submit" class="btn btn-secondary">Send Message</button>
+          </form>
+        </div>
+        <div class="contact-form section-hidden center-align">
+            <div class="center-align">
+                <!-- Calendly link widget begin -->
+                <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+                <a class="btn" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/hellosri/30min?hide_event_type_details=1&hide_gdpr_banner=1'});return false;"><img style='width:50%;' src="images/30min-consult.jpeg" alt="30 min consult"/></a>
+                <!-- Calendly link widget end -->       
+            </div>
+          </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>© 2025 HelloSri LLC</strong></p>
+    </div>
+  </footer>
+
+  <!-- Site JS -->
+  <script src="js/script.js" defer></script>
+
+  <!-- Smooth Reveal Animations -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Hero fade-in
+      const hero = document.querySelector('.hero-content');
+      hero.classList.add('reveal');
+
+      // Section reveal on scroll
+      const sections = document.querySelectorAll('section');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('reveal');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      sections.forEach(sec => observer.observe(sec));
+    });
+  </script>

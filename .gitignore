@@ -1,0 +1,14 @@
+# Logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE directories
+.vscode/
+.idea/
+*.swp
+
+# Node modules (if added later)
+node_modules/
