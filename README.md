@@ -6,7 +6,6 @@ Welcome to the official website of **HelloSri LLC**, a leading Technology Consul
 - **AI Automation** – Streamline operations using cutting-edge AI
 - **Technology Consulting** – Strategic advice for tech transformations
 - **IT Strategy** – Scalable, robust digital roadmaps
-- **Project Delivery** – Efficient and transparent implementation
 
 ## 🌐 Live Website
 Visit our site: [https://hellosri.com]
