@@ -7,7 +7,7 @@ navToggle.addEventListener('click', () => {
 });
 
 // Calendly inline widget initialization
-window.addEventListener('DOMContentLoaded', () => {
+/* window.addEventListener('DOMContentLoaded', () => {
   if (window.Calendly) {
     Calendly.initInlineWidget({
       url: 'https://calendly.com/hellosri/consultation',
@@ -16,4 +16,4 @@ window.addEventListener('DOMContentLoaded', () => {
       utm: {}
     });
   }
-});
+}); */
