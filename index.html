@@ -78,11 +78,55 @@
         <!-- Contact Form -->
         <div class="contact-form section-hidden">
           <h2>Contact Us</h2>
-          <form action="https://formspree.io/f/myzwkyob" method="POST" target="_blank">
-            <label>Name<input type="text" name="name" required /></label>
-            <label>Email<input type="email" name="_replyto" required /></label>
-            <label>Message<textarea name="message" rows="4" required></textarea></label>
-            <button type="submit" class="btn btn-secondary">Send Message</button>
+          <form action="https://formspree.io/f/myzwkyob" method="POST" target="_blank" autocomplete="on">
+            <input 
+              type="text" 
+              name="name" 
+              placeholder="Full Name" 
+              required 
+              pattern="^[A-Za-z\s\-']{2,50}$" 
+              title="Please enter your full name (letters and spaces only)" 
+              autocomplete="name"
+            />
+            <input 
+              type="email" 
+              name="_replyto" 
+              placeholder="Email Address" 
+              required 
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" 
+              title="Please enter a valid email address" 
+              autocomplete="email"
+            />
+            <input 
+              type="tel" 
+              name="phone" 
+              placeholder="Phone (123-456-7890)" 
+              required 
+              pattern="^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$" 
+              title="Please enter a valid US phone number (e.g., 123-456-7890)" 
+              autocomplete="tel"
+              inputmode="tel"
+            />
+            <textarea 
+              name="message" 
+              rows="4" 
+              placeholder="Describe your project requirements" 
+              required 
+              minlength="10" 
+              maxlength="1000"
+              title="Please enter at least 10 characters"
+            ></textarea>
+            <!-- consent to receive voice & txt messages -->
+            <div class="consent-row">
+              <input type="checkbox" name="consent" required id="consent-checkbox" />
+              <label for="consent-checkbox" style="margin:0;">
+                I consent to voice and text messages from HelloSri LLC. 
+              </label>
+            </div>
+            <div class="consent-row">
+              <label>We do not share your information with third parties.</label>
+            </div>
+            <button type="submit" class="btn btn-secondary" id="send-btn" disabled>Send Message</button>
           </form>
         </div>
         <div class="contact-form section-hidden center-align">
@@ -107,23 +151,7 @@
   <!-- Site JS -->
   <script src="js/script.js" defer></script>
 
-  <!-- Smooth Reveal Animations -->
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      // Hero fade-in
-      const hero = document.querySelector('.hero-content');
-      hero.classList.add('reveal');
-
-      // Section reveal on scroll
-      const sections = document.querySelectorAll('section');
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('reveal');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.15 });
-      sections.forEach(sec => observer.observe(sec));
-    });
-  </script>
+  <!-- Calendly Script -->
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+</body>
+</html>
