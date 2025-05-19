@@ -8,7 +8,7 @@
 }
 html {
   font-size: 100%;
-  font-weight: bold;
+  /*font-weight: bold;*/
   scroll-behavior: smooth;
 }
 body {
@@ -62,7 +62,7 @@ body {
 .site-nav a {
   text-decoration: none;
   color: #333;
-  font-weight: bolder;
+  /*font-weight: bolder;*/
 }
 .site-nav a:hover {
   color: #0077cc;
@@ -221,7 +221,10 @@ body {
 }
 .site-footer a {
   color: #fff;
-  text-decoration: underline;
+  text-decoration: none;
+}
+.site-footer a:hover {
+  color: #0077cc;
 }
 
 /* --- Responsive --- */
