@@ -1,0 +1,31 @@
+---
+layout: default
+title: "Blog | HelloSri LLC"
+---
+
+<section class="blog-list">
+  <div class="container">
+    <h1>Latest Insights & Articles</h1>
+    <p class="section-intro">Explore our latest thoughts on AI automation, technology consulting, and digital transformation.</p>
+    
+    <div class="blog-grid">
+      {% for post in site.posts %}
+      <div class="blog-card">
+        <!--img src="images/ai.png" alt="{{ post.title }}" /-->
+        <div class="blog-card-content">
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
+          <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+          <a href="{{ post.url | relative_url }}" class="read-more">Read More</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    
+    {% if site.posts.size == 0 %}
+    <div class="no-posts">
+      <p>No blog posts available yet. Check back soon for new content!</p>
+    </div>
+    {% endif %}
+  </div>
+</section>

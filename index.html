@@ -1,3 +1,7 @@
+---
+layout: default
+title: "HelloSri LLC – AI Automation & Technology Consulting"
+---
 <!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
@@ -38,22 +42,6 @@
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
 </head>
 <body>
-  <!-- Header / Navbar -->
-  <header class="site-header">
-    <div class="container">
-      <div class="logo"><a href="#"><img src="images/logo.png" alt="Hellosri - AI Automation"/></a></div>
-      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">☰</button>
-      <nav id="site-nav" class="site-nav">
-        <ul>
-          <li><a href="index.html#hero">Home</a></li>
-          <li><a href="index.html#services">Services</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
   <main>
     <!-- Hero Section -->
     <section id="hero" class="hero">
@@ -91,6 +79,27 @@
       <div class="container">
         <h2>About HelloSri LLC</h2>
         <p>Founded on deep technical expertise and a passion for innovation, we help organizations across industries harness AI and modern IT practices to unlock new efficiencies, reduce costs, and drive growth.</p>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-preview">
+      <div class="container">
+        <h2>Latest Insights & Articles</h2>
+        <div class="blog-grid">
+          {% for post in site.posts limit:5 %}
+          <div class="blog-card">
+            <!--img src="images/ai.png" alt="{{ post.title }}" /-->
+            <div class="blog-card-content">
+              <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+              <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
+              <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+              <a href="{{ post.url | relative_url }}" class="read-more">Read More</a>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <p><a class="btn btn-primary" href="/blog.html">View All Articles</a></p>
       </div>
     </section>
 
@@ -140,9 +149,15 @@
             ></textarea>
             <!-- consent to receive voice & txt messages -->
             <div class="consent-row">
-              <input type="checkbox" name="consent" required id="consent-checkbox" />
-              <label for="consent-checkbox" style="margin:0;">
-                I consent to promotional messages from HelloSri LLC. 
+              <input type="checkbox" name="info_consent" required id="consent-info" />
+              <label for="consent-info" class="required-label" style="margin:0;">
+                <span title="Voice and Msg rates apply, reply STOP to cancel">I consent to essential updates from HelloSri</span>
+              </label>
+            </div>
+            <div class="consent-row">
+              <input type="checkbox" name="promo_consent" id="consent-promo" />
+              <label for="consent-promo" style="margin:0;">
+                <span title="Voice and Msg rates apply, reply STOP to cancel">I consent to promotional messages from HelloSri</span> 
               </label>
             </div>
             <div class="consent-row">
@@ -162,13 +177,6 @@
           </div>
     </section>
   </main>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <p><strong>© 2025 HelloSri LLC</strong> | <a href="terms-privacy-policy.html">Terms &amp; Privacy Policy</a></p>
-    </div>
-  </footer>
 
   <!-- Site JS -->
   <script src="js/script.js" defer></script>

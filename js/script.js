@@ -1,18 +1,20 @@
 // Mobile nav toggle
-const navToggle = document.getElementById('nav-toggle');
-const siteNav = document.getElementById('site-nav');
+document.addEventListener('DOMContentLoaded', function() {
+  const navToggle = document.getElementById('nav-toggle');
+  const siteNav = document.getElementById('site-nav');
 
-
-navToggle.addEventListener('click', () => {
-  siteNav.classList.toggle('open');
+  if (navToggle && siteNav) {
+    navToggle.addEventListener('click', () => {
+      siteNav.classList.toggle('open');
+    });
+  }
 });
-
 
 
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.getElementById('contact-form') || document.querySelector('form[action*="formspree"]');
   const sendBtn = document.getElementById('send-btn');
-  const consent = document.getElementById('consent-checkbox');
+  const consent = document.getElementById('consent-info');
   const phoneInput = form ? form.querySelector('input[name="phone"]') : null;
 
   function validateForm() {

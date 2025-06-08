@@ -12,3 +12,9 @@ Thumbs.db
 
 # Node modules (if added later)
 node_modules/
+
+# Jekyll files
+_site/
+.sass-cache/
+
+hellosri.com-social/
