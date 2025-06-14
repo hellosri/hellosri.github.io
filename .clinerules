@@ -1,0 +1,18 @@
+# Crawl4AI MCP
+- **Always use the Crawl4AI MCP server** to reference documentation for libraries
+- For the tokens, always use 5000 tokens for your search
+- **Only search a maximum of three times for any specific piece of documentation.** If you don't get what you need, use the Brave MCP server to perform a wider search
+
+# Project Awareness & Context
+- **Always read PLANNING.md** at the start of a new conversation to understand the project's architecture, goals, style and constraints.
+- **Check TASK.md** before starting a new task. If the task isn't listed, add it with a brief description and today's date.
+- **Use consistent naming conventions, file structure and architecture patterns** as described in PLANNING.md
+
+# Code Structure & Modularity
+- **Never create a file longer than 500 lines of code.** If the file approaches this limit, refactor by splitting it into modules or hepler files.
+- **Use clear, consistent, imports** (prefer relative imports within packages).
+
+# Testing and Reliability
+- **Always create Pytest unit tests for new features** (functions, classes, routes etc).
+- **After updating any logic**, check whether existing unit test need to be updated, If so, do it.
+- **Tests should live in a /tests folder** mirroring the main app structure

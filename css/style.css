@@ -501,6 +501,7 @@ body {
 @media (max-width: 768px) {
   .nav-toggle {
     display: block;
+    cursor: pointer;
   }
   .site-nav {
     position: absolute;
@@ -511,6 +512,8 @@ body {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
+    width: 90%;
+    margin: 0 auto;
   }
   .site-nav.open {
     max-height: 200px;
