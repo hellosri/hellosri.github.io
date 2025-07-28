@@ -25,15 +25,13 @@ By using IBM’s own AI tools:
 - HR process streamlined from 700 to **just 50 professionals**
 - Freed employees spend more time on career guidance instead of bureaucracy
 - IBM redeployed talent and **added thousands of jobs**
-- CEO **Arvind Krishna**: “I don’t intend to get rid of a single [programmer]. I’ll get more,” projecting AI makes programmers **30% more productive** and drives tech talent demand
-(https://www.i-programmer.info/news/99-professional/16653-ibms-ceo-no-programmer-is-threatened-by-ai.html)
+- CEO **Arvind Krishna**: “I don’t intend to get rid of a single [programmer]. I’ll get more,” projecting AI makes programmers **30% more productive** and drives [tech talent demand](https://www.i-programmer.info/news/99-professional/16653-ibms-ceo-no-programmer-is-threatened-by-ai.html)
 
 > In short, AI helped IBM “work hand in hand” with their people to achieve transformation.
 
 IBM’s experience reflects a broader trend:
 
-- A **2025 IBM global CEO study** found that **54% of CEOs are hiring for new AI-related roles** that didn’t exist a year ago
-(https://hrexecutive.com/half-of-ceos-want-new-ai-roles-what-ibm-says-hr-can-do-to-prepare/)
+- A **2025 IBM global CEO study** found that **54% of CEOs are hiring for [new AI-related roles](https://hrexecutive.com/half-of-ceos-want-new-ai-roles-what-ibm-says-hr-can-do-to-prepare/)** that didn’t exist a year ago
 - Many organizations are urgently investing in upskilling
 - **Kim Morick**, IBM HR Tech: “Companies think bringing AI into their workforce starts and ends with new tools… without fully addressing how work, roles and skills need to evolve alongside the technology.”
 - **Reskilling**: IBM estimates nearly **one-third** of their workforce will require reskilling in three years
@@ -94,8 +92,7 @@ The third “P” – **Product** – is where AI’s impact is most **visible t
 
 - AI algorithms drive **personalization**: recommendations \& thumbnails
 - Core to success:
-> Netflix’s AI recommendation engine “saves the company about \$1 billion/year” by reducing churn and keeping viewers engaged
-(https://www.nasdaq.com/articles/how-netflixs-ai-saves-it-1-billion-every-year-2016-06-19)
+> Netflix’s AI recommendation engine “[saves the company about \$1 billion/year](https://www.nasdaq.com/articles/how-netflixs-ai-saves-it-1-billion-every-year-2016-06-19)” by reducing churn and keeping viewers engaged
 - “When produced and used correctly, recommendations lead to meaningful increases in overall engagement... and lower cancellation rates.”
 - **Personalization = dramatically increased customer lifetime value**
 
@@ -141,15 +138,14 @@ As AI spreads across **People**, **Process**, and **Product**, **governance** em
 - Recognize that **strong AI governance** is “not just a compliance checkbox, but a strategic imperative for sustainable transformation.”
 - **Ursula von der Leyen**, European Commission President (2024):
 > “Our future competitiveness depends on AI adoption in our daily businesses... Europe must up its game and show the way to responsible use of AI – AI that enhances human capabilities, improves productivity and serves society.”
-- **Governance**: Frameworks, policies, and oversight for **ethical \& effective** AI deployment; spans **data quality, privacy, transparency, fairness, security**
-(https://newsroom.ibm.com/How-governments-and-companies-should-advance-trusted-AI)
-- “AI is a very significant opportunity—if used in a responsible way.” — von der Leyen
-(https://www.weforum.org/stories/2024/01/what-leaders-said-about-ai-at-davos-2024/)
+- **Governance**: Frameworks, policies, and oversight for **ethical & effective** AI deployment; spans **[data quality, privacy, transparency, fairness, security](https://newsroom.ibm.com/How-governments-and-companies-should-advance-trusted-AI)**
+
+- “AI is a very significant opportunity—if used in a responsible way.” — [von der Leyen](https://www.weforum.org/stories/2024/01/what-leaders-said-about-ai-at-davos-2024/)
+
 
 **Leading Companies:**
 
-- **IBM:** Calls for “precision regulation,” has internal ethics boards, trusted AI framework focusing on “bias mitigation and transparency”
-    - (https://newsroom.ibm.com/How-governments-and-companies-should-advance-trusted-AI)
+- **IBM:** Calls for “precision regulation,” has internal ethics boards, [trusted AI framework](https://newsroom.ibm.com/How-governments-and-companies-should-advance-trusted-AI) focusing on “bias mitigation and transparency"
 - **Microsoft, Google:** AI Principles; auditing for unfair biases
 - **Apple** CEO **Tim Cook**:
 > “Advancing AI by collecting huge personal profiles is laziness, not efficiency”
